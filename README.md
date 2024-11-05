@@ -38,10 +38,11 @@ Terminal=false
 MimeType=x-scheme-handler/ninjarmm;
 ```
 
-6. Install the desktop entry so that Chrome can recognize the protocol.
+6. Install the desktop entry so that Chrome can recognize the protocol, and the mime handler so Firefox recognizes it.
 
 ```bash
 xdg-desktop-menu install ~/.local/share/applications/ncplayer.desktop --novendor
+xdg-mime install ~/.local/share/applications/ncplayer.desktop --novendor
 ```  
 
 7. Install dxvk wine module
